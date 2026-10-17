@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo lo que debes saber del Anime</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="Script.js">
+</head>
+<body>
+
+<!-- Elemento de audio con reproductor dinámico -->
+
+<!-- REPRODUCTOR DE MÚSICA ONLINE -->
+
+<div id="youtube-player"></div>
+
+<div class="top-bar">
+
+  <div class="music-controls-group">
+
+    <button
+      class="control-btn"
+      id="play-pause-btn"
+      onclick="togglePlay()"
+      disabled>
+      ▶ Reproducir
+    </button>
+
+    <span id="track-name" class="track-info">
+      Cargando música...
+    </span>
+
+    <button
+      class="control-btn"
+      onclick="cambiarCancion(0)">
+      Demon Slayer
+    </button>
+
+    <button
+      class="control-btn"
+      onclick="cambiarCancion(1)">
+      Fullmetal Alchemist
+    </button>
+
+  </div>
+
+</div>
+
+    <!-- Contenedor de Diapositivas Estilo Canva -->
+    <div class="slides-container">
+
+        <!-- 1. Portada -->
+        <div class="slide active slide-1">
+            <div class="portada-grid">
+                <div class="img-box floating-anim" style="background-image: url('https://images.unsplash.com/photo-1578632767115-351597cf2477?w=400');"></div>
+                <div class="text-center-box">
+                    <span class="sub-top">TODO LO QUE DEBES SABER DEL</span>
+                    <h1 class="title-main">ANIME</h1>
+                    <span class="sub-bottom">una aventura increíble</span>
+                </div>
+                <div class="img-box floating-anim" style="background-image: url('https://images.unsplash.com/photo-1607604276583-eef5d076aa5f?w=400');"></div>
+            </div>
+        </div>
+
+        <!-- 2. Qué es el anime -->
+        <div class="slide slide-2">
+            <div class="content-split">
+                <div class="text-side">
+                    <h2 class="title-cursive">que es el anime</h2>
+                    <p class="text-desc">El anime es un estilo de animación de origen japonés que abarca series de televisión, películas y cortos dirigidos a públicos de todas las edades[cite: 2].</p>
+                </div>
+                <div class="image-side floating-anim">
+                    <div class="anime-frame" style="background-image: url('https://images.unsplash.com/photo-1563089145-599997674d42?w=500');"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 3. Características Principales -->
+        <div class="slide slide-3">
+            <h2 class="title-cursive-large">Características principales:</h2>
+            <div class="features-grid">
+                <div class="feature-item floating-anim">
+                    <p><strong>Origen:</strong> Nació en Japón a principios del siglo XX y se popularizó a nivel mundial[cite: 2].</p>
+                </div>
+                <div class="feature-item floating-anim" style="animation-delay: 0.2s;">
+                    <p><strong>Público:</strong> A diferencia de la animación occidental, abarca contenidos dirigidos a niños, adolescentes y adultos con tramas complejas[cite: 2].</p>
+                </div>
+                <div class="feature-item floating-anim" style="animation-delay: 0.4s;">
+                    <p>Destaca por sus personajes de ojos grandes, expresiones marcadas y una mezcla de géneros muy variada[cite: 2].</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- 4. Algunos Animes -->
+        <div class="slide slide-4">
+            <h2 class="title-cursive">Algunos Animes</h2>
+            <div class="grid-animes-visual">
+                <div class="anime-card-v floating-anim"><span>KAIJU NO. 8</span><small>NUEVO ANIME[cite: 2]</small></div>
+                <div class="anime-card-v floating-anim" style="animation-delay: 0.1s;"><span>DEMON SLAYER</span><small>TEMPORADA 4[cite: 2]</small></div>
+                <div class="anime-card-v floating-anim" style="animation-delay: 0.2s;"><span>MY HERO ACADEMIA</span><small>TEMPORADA 7[cite: 2]</small></div>
+                <div class="anime-card-v floating-anim" style="animation-delay: 0.3s;"><span>MUSHOKU TENSEI</span><small>TEMPORADA 2[cite: 2]</small></div>
+                <div class="anime-card-v floating-anim" style="animation-delay: 0.4s;"><span>DUNGEON MESHI</span><small>NUEVO ANIME[cite: 2]</small></div>
+                <div class="anime-card-v floating-anim" style="animation-delay: 0.5s;"><span>WIND BREAKER</span><small>NUEVO ANIME[cite: 2]</small></div>
+            </div>
+        </div>
+
+        <!-- 5. Demon Slayer (Título) -->
+        <div class="slide slide-5">
+            <h1 class="title-pink floating-anim">DEMON SLAYER</h1>
+        </div>
+
+        <!-- 6. Personajes Demon Slayer -->
+        <div class="slide slide-6">
+            <h2 class="title-cursive">Personajes de Demon Slayer</h2>
+            <div class="chars-layout">
+                <ul class="list-styled floating-anim">
+                    <li>Tanjiro Kamado</li>
+                    <li>Nezuko Kamado</li>
+                    <li>Zenitsu Agatsuma</li>
+                    <li>Inosuke Hashibira</li>
+                    <li>Rengoku / Shinobu</li>
+                </ul>
+                <div class="char-banner-img floating-anim" style="background-image: url('https://images.unsplash.com/photo-1607604276583-eef5d076aa5f?w=500');"></div>
+            </div>
+        </div>
+
+        <!-- 7. Datos Curiosos Demon Slayer -->
+        <div class="slide slide-7">
+            <h2 class="title-cursive-center">datos curiosos</h2>
+            <div class="curiosidades-grid-v">
+                <div class="c-box floating-anim">
+                    <strong>1. NO NECESITA ALIMENTARSE DE HUMANOS</strong>
+                    <p>Nezuko no consume sangre humana; obtiene energía durmiendo[cite: 2].</p>
+                </div>
+                <div class="c-box floating-anim" style="animation-delay: 0.2s;">
+                    <strong>2. CAMBIO DE NOMBRE</strong>
+                    <p>Originalmente se iba a titular Kisatsu No Yaiba[cite: 2].</p>
+                </div>
+                <div class="c-box floating-anim" style="animation-delay: 0.4s;">
+                    <strong>3. AUTOR DESCONOCIDO</strong>
+                    <p>Firma bajo el seudónimo de Koyoharu Gotouge[cite: 2].</p>
+                </div>
+                <div class="c-box floating-anim" style="animation-delay: 0.6s;">
+                    <strong>4. PRIMER DISEÑO</strong>
+                    <p>El diseño inicial de Tanjirou era diferente al actual[cite: 2].</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- 8. Fullmetal Alchemist (Título) -->
+        <div class="slide slide-8">
+            <h1 class="title-blue floating-anim">fullmetal alchemist</h1>
+        </div>
+
+        <!-- 9. Personajes Fullmetal Alchemist -->
+        <div class="slide slide-9">
+            <h2 class="title-cursive">PERSONAJES</h2>
+            <div class="chars-layout">
+                <ul class="list-styled floating-anim">
+                    <li>Edward Elric</li>
+                    <li>Alphonse Elric</li>
+                    <li>Winry Rockbell</li>
+                    <li>Roy Mustang / Riza</li>
+                </ul>
+                <div class="char-banner-img floating-anim" style="background-image: url('https://images.unsplash.com/photo-1578632767115-351597cf2477?w=500');"></div>
+            </div>
+        </div>
+
+        <!-- 10. Datos Curiosos Fullmetal Alchemist -->
+        <div class="slide slide-10">
+            <h2 class="title-cursive-center">datos curiosos</h2>
+            <div class="curiosidades-grid-v">
+                <div class="c-box floating-anim">
+                    <strong>ERROR DE DOBLAJE</strong>
+                    <p>Diferencias sutiles respecto a la versión original japonesa[cite: 2].</p>
+                </div>
+                <div class="c-box floating-anim" style="animation-delay: 0.2s;">
+                    <strong>SU ESTATURA</strong>
+                    <p>Inició midiendo 1.49 m y terminó alcanzando 1.69 m[cite: 2].</p>
+                </div>
+                <div class="c-box floating-anim" style="animation-delay: 0.4s;">
+                    <strong>LOGÍSTICA INTERIOR</strong>
+                    <p>Alphonse transporta objetos dentro de su armadura[cite: 2].</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- 11. Cierre -->
+        <div class="slide slide-11">
+            <div class="portada-content floating-anim" style="text-align: center;">
+                <h3 class="portada-sub">terminamos nuestra aventura</h3>
+                <h1 class="title-main" style="font-size: 2.2rem; margin: 15px 0;">SUERTE ENCONTRANDO NUEVAS COSAS</h1>
+                <h2 class="title-cursive" style="color: #4a2e5d;">NOS VEMOS PRONTO</h2>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Barra de Navegación Inferior -->
+    <div class="canva-nav-bar">
+        <button class="c-btn" onclick="changeSlide(-1)">◀ Anterior</button>
+        <span id="counter" class="c-counter">1 / 11</span>
+        <button class="c-btn" onclick="changeSlide(1)">Siguiente ▶</button>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
